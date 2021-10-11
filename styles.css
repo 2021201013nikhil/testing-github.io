@@ -1,0 +1,130 @@
+#navigation{height: 30px;width: 100%; background: #333333;padding: 10px 0;display: flex;}
+#nav{margin:auto;padding-left: 15px; padding-right: 15px;float: right;display: flex;overflow: hidden;}
+#name{padding:0% 0%;font-size: 28px;font-weight: 800;color:#ff4a57}
+#nav .icon {
+    display: none;
+  }
+span{width: 20%;padding-right: 50px;font-size: 20px;color: #FFFFFF;}
+.colorOnHover:hover{text-decoration:none;color:#ff4a57;}
+#demo{margin:auto;font-size: 15px;color:ivory; bottom: 10px;position: absolute;}
+#logos{margin:10px;align-items: center;justify-content: center;display: flex;}
+.fa-linkedin-square:before {
+    content: "\f08c"
+}
+.fa-linkedin:before {
+    content: "\f0e1"
+}
+table, td {
+    border: 5px solid rgb(250, 215, 215);
+    border-collapse: collapse;
+    color: antiquewhite;
+    font-size: 20px;
+}
+th{
+    border: 5px solid rgb(250, 215, 215);
+    border-collapse: collapse;
+    color: antiquewhite;
+    font-size: 30px;
+}
+a{  
+    margin: 10px;
+    font-size: 20px;
+    color: #fff34a;
+}
+#fullPage{
+    height: 100%;
+}
+body{background-repeat: no-repeat;  
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://drive.google.com/uc?export=view&id=1AwecV-U4LSb2ADbE5dS8ml7eFjCjwTo5);
+    background-size: cover;
+    height: 100%; 
+    margin: 0%;
+}
+footer{display: flex;justify-content: center;}
+#homeDiv{display: none;}
+#aboutDiv{display: none;}
+#educationDiv{display: none;color: antiquewhite;}
+#educationContent{font-size: 20px;color:burlywood;}
+#publicationDiv{display: none;}
+#publicationContent{font-size: 20px;color:burlywood;}
+#helpDiv{display: none;}
+#profilePhoto{height: 350px;width:inherit; float:right; margin:5%;}
+#undergrad{float:left; margin:5%;width: 35%;margin-top: 0%;}
+#undergradPhoto{height: 300px;width: 435px; float:right; margin:5%;}
+#postgrad{float:right; margin:5%;width: 35%;margin-top: 0%;}
+#postgradPhoto{height: 300px;width: 435px; float:left; margin-bottom:5%;}
+#myself{display:flex;justify-content: center;align-items: center;}
+#welcome{font-size:45px;display:flex;justify-content: center;align-items: center;margin-top: 10%;}
+.changeContent::after {
+    content: '';
+    animation : changetext 15s infinite linear;
+    font-size: 4rem;
+    color:#ff4a57;
+}
+#LineAboutMe{color:ivory;padding:10px;margin:5px;font-size: 15px;font-family: "sans-serif";}
+@keyframes changetext {
+    0% { content: "Programmer";}
+    20% { content: "Gamer";}
+    40% { content: "Sports Maniac";}
+    60% { content: "Geek";}
+    80% { content: "Junky";}
+    100% { content: "TERROR";}
+}
+
+@media screen and (max-width: 1000px) {
+    .left, .main, .right {
+        width: 100%; 
+    }
+} 
+@media screen and (max-width: 1200px) {
+    #demo{
+    font-size:20px;
+    }
+}
+@media screen and (max-width: 850px) {
+    #demo {
+        position: static;
+        left: 6px;
+        bottom:0px;
+        margin-top:5px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 23px;
+        font-weight: bold;
+    }
+    #navigation {
+        flex-direction: column;
+    }
+    #nav {
+        flex-direction: column;
+    }
+    #profilePhoto{
+        width:300px;
+        height:300px;
+        border-radius: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* @media screen and (max-width: 600px) {
+    #nav span:not(:first-child) {display: none;}
+    #nav span.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+@media screen and (max-width: 600px) {
+    #nav.responsive {position: relative;}
+    #nav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    #nav.responsive span {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+} */
